@@ -1,17 +1,18 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { Menu, X } from 'lucide-react'; // Install lucide-react or use another icon set
+import Link from "next/link";
+import { useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
+import { Menu, X } from "lucide-react"; // Install lucide-react or use another icon set
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -34,6 +35,9 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
+        <Link href="/choice" className="text-3xl text-gray-700 hover:text-emerald-600 transition-colors">
+        <FaShoppingCart  />
+        </Link>
 
         {/* Mobile Menu Button */}
         <button

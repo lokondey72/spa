@@ -4,7 +4,7 @@ import GoogleMap from "@/componants/GoogleMap";
 
 export default function AboutPage() {
   return (
-    <section className="bg-white min-h-screen py-20 px-4">
+    <section className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text Section */}
         <div>

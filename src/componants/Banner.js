@@ -1,43 +1,47 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Banner() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    pauseOnHover: true,
+  };
+
+  const slides = [
+    { id: 1, image: "/massage-therapy-img.jpg", alt: "Slide 1" },
+    { id: 2, image: "/spa-massage_img.jpg", alt: "Slide 2" },
+    { id: 3, image: "/massage-therapy-img.jpg", alt: "Slide 3" },
+  ];
+
   return (
-    <section className="bg-emerald-50 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
-        {/* Text Content */}
-        <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-emerald-700 leading-tight">
-            Relax. Refresh. Rejuvenate.
-          </h1>
-          <p className="mt-4 text-lg text-gray-600">
-            Discover the ultimate relaxation experience with our professional
-            body massage therapy. Escape the stress and treat yourself today.
-          </p>
-
-          <div className="mt-6">
-            <Link
-              href="/book"
-              className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-md hover:bg-emerald-700 transition"
-            >
-              Book Now
-            </Link>
-          </div>
-        </div>
-
-        {/* Image Section */}
-        <div className="relative w-full h-80 md:h-[500px]">
-          <Image
-            src="/spa-massage_img.jpg"
-            alt="Massage therapy"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg shadow-lg"
-            priority
-          />
-        </div>
+    <section className="w-full max-w-7xl mx-auto px-4 pt-16">
+      <div className="overflow-hidden shadow-lg">
+        <Slider {...settings}>
+          {slides.map((slide) => (
+            <div key={slide.id}>
+              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px]">
+                <Image
+                  src={slide.image}
+                  alt={slide.alt}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );
