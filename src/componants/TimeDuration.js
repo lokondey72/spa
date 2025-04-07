@@ -5,11 +5,11 @@ import Link from "next/link";
 
 const TimeDuration = () => {
   return (
-    <div className="container">
+    <div className="max-w-6xl mx-auto">
       {/* Time Duration */}
       <div className="py-5">
-        <h1 className="text-2xl md:text-5xl font-bold text-emerald-700 leading-tight">
-          Time Duration.
+        <h1 className="text-2xl md:text-3xl font-bold text-center text-emerald-700 leading-tight pb-4">
+          Time Duration
         </h1>
         <OpenStatus />
 

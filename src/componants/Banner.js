@@ -14,7 +14,6 @@ export default function Banner() {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
     pauseOnHover: true,
   };
 
@@ -25,12 +24,12 @@ export default function Banner() {
   ];
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 pt-16">
+    <section className="w-full max-w-7xl mx-auto px-4 pt-20">
       <div className="overflow-hidden shadow-lg">
         <Slider {...settings}>
           {slides.map((slide) => (
             <div key={slide.id}>
-              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px]">
+              <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px]">
                 <Image
                   src={slide.image}
                   alt={slide.alt}
