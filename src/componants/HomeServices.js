@@ -22,7 +22,7 @@ const services = [
   {
     title: "Aromatherapy",
     description: "Essential oils to calm, uplift, or energize your mood.",
-    image: "/istockphoto-img-1.jpg",
+    image: "/massage4.jpg",
   },
 ];
 

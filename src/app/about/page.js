@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import GoogleMap from "@/componants/GoogleMap";
+import MapWithMarker from "@/componants/MapWithMarker";
 
 export default function AboutPage() {
   return (
-    <section className="min-h-screen py-20 px-4">
+    <section className="min-h-screen py-26 px-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text Section */}
         <div>
@@ -33,14 +33,15 @@ export default function AboutPage() {
         {/* Image Section */}
         <div className="relative w-full h-72 md:h-96">
           {/* <GoogleMap /> */}
-          <Image
+          {/* <Image
             src="/massage-therapy-img.jpg"
             alt="About Serenity Touch Massage"
             layout="fill"
             objectFit="cover"
             className="rounded-xl shadow-md"
             priority
-          />
+          /> */}
+          <MapWithMarker />
         </div>
       </div>
     </section>

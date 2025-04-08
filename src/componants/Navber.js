@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image"; // ✅ correct
 import { FaShoppingCart } from "react-icons/fa";
 import { Menu, X } from "lucide-react"; // Install lucide-react or use another icon set
 
@@ -17,10 +18,17 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-emerald-600">
-          MyWebsite
+        <Link href="/" className="text-xl font-bold text-emerald-600">
+          <Image
+            src="/Eurosespa-logo.png"
+            alt="Eurosespa Logo"
+            width={70}
+            height={70}
+            className="object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Menu */}
@@ -35,8 +43,11 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
-        <Link href="/choice" className="text-3xl text-gray-700 hover:text-emerald-600 transition-colors">
-        <FaShoppingCart  />
+        <Link
+          href="/choice"
+          className="text-3xl text-gray-700 hover:text-emerald-600 transition-colors"
+        >
+          <FaShoppingCart />
         </Link>
 
         {/* Mobile Menu Button */}

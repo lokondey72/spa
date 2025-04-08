@@ -10,13 +10,13 @@ const products = [
     title: "Massage Therapy",
     slug: "massage",
     price: "$29.99",
-    image: "/tshirt.jpg",
+    image: "/Haircut Start.jpg",
   },
   {
     title: "Body Scrubs",
     slug: "hoodie",
     price: "$49.99",
-    image: "/hoodie.jpg", // replace with actual image URL
+    image: "/SHAVE START.jpg", // replace with actual image URL
   },
 ];
 
@@ -36,11 +36,16 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 pt-20 px-4 sm:px-6 lg:px-20">
-      <h1 className="text-3xl font-bold mb-8 text-gray-800">Select a Product</h1>
-      
-      <form onSubmit={handleSubmit} className="mb-8">
-        <label htmlFor="product" className="text-gray-700 mb-2 block font-medium">
+    <main className="max-w-6xl mx-auto min-h-screen pt-20 px-4 sm:px-6 lg:px-20">
+      <h1 className="text-3xl font-bold mt-8 text-gray-800">
+        Select a Product
+      </h1>
+
+      <form onSubmit={handleSubmit} className="mb-5">
+        <label
+          htmlFor="product"
+          className="text-gray-700 mb-2 block font-medium"
+        >
           Choose a product
         </label>
         <select
@@ -56,7 +61,7 @@ export default function HomePage() {
             </option>
           ))}
         </select>
-        
+
         <button
           type="submit"
           className="mt-4 bg-rose-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-rose-700 transition"
@@ -67,8 +72,21 @@ export default function HomePage() {
 
       {/* Display the selected product's image (optional) */}
       {selectedProduct && (
-        <div className="w-full relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg">
-          
+        <div className="flex gap-10 items-center">
+          <div className="w-[400px] relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg my-5">
+            <Image
+              src={products.find((p) => p.slug === selectedProduct).image}
+              alt={products.find((p) => p.slug === selectedProduct).title}
+              fill
+              className="w-full mx-auto"
+            />
+          </div>
+
+          <div>          
+            <p>{products.find((p) => p.slug === selectedProduct).title}</p>
+            <p>{products.find((p) => p.slug === selectedProduct).price}</p>
+            
+          </div>
         </div>
       )}
     </main>

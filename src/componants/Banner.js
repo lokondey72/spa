@@ -18,9 +18,9 @@ export default function Banner() {
   };
 
   const slides = [
-    { id: 1, image: "/massage-therapy-img.jpg", alt: "Slide 1" },
-    { id: 2, image: "/spa-massage_img.jpg", alt: "Slide 2" },
-    { id: 3, image: "/massage-therapy-img.jpg", alt: "Slide 3" },
+    { id: 1, image: "/banner-img-1.jpg", alt: "Slide 1" },
+    { id: 2, image: "/banner-img-2.jpg", alt: "Slide 2" },
+    { id: 3, image: "/banner-img-3.jpg", alt: "Slide 3" },
   ];
 
   return (
