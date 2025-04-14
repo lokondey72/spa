@@ -7,17 +7,17 @@ const services = [
   {
     title: "Swedish Massage",
     description: "Relax your body and mind with classic Swedish techniques.",
-    image: "/photo-swedish-massage-1.jpg",
+    image: "/Swedish-Massage-1.jpg",
   },
   {
-    title: "Deep Tissue Massage",
+    title: "Haircut Start",
     description: "Target deeper layers of muscle and connective tissue.",
-    image: "/istockphoto-1.jpg",
+    image: "/Haircut Start.jpg",
   },
   {
-    title: "Hot Stone Therapy",
+    title: "Oil massage",
     description: "Warm stones to ease muscle tension and boost circulation.",
-    image: "/Definition-Of-Hot-Stone-Massage.jpg",
+    image: "/Oil-massage-1.jpg",
   },
   {
     title: "Aromatherapy",
