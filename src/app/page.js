@@ -4,6 +4,7 @@ import ServicesPage from "./services/page";
 import AboutPage from "./about/page";
 import TimeDuration from "@/componants/TimeDuration";
 import HomeServices from "@/componants/HomeServices";
+import AllServices from "@/componants/AllServices";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <Banner />
         <TimeDuration />
         <HomeServices />
-        <ServicesPage />
+        <AllServices/>
         <AboutPage />
       </div>
     </main>

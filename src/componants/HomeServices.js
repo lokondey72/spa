@@ -22,7 +22,7 @@ const services = [
   {
     title: "Aromatherapy",
     description: "Essential oils to calm, uplift, or energize your mood.",
-    image: "/massage4.jpg",
+    image: "/Aromatherapy-1.jpg",
   },
 ];
 
@@ -46,7 +46,7 @@ const sliderSettings = {
 
 export default function HomeServices() {
   return (
-    <main className="min-h-screen py-10 px-4 sm:px-6 lg:px-20">
+    <main className="py-10 px-4 sm:px-6 lg:px-20">
       <h1 className="text-3xl font-bold mb-10 text-center text-emerald-700">
         Our Services
       </h1>

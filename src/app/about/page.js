@@ -4,7 +4,7 @@ import MapWithMarker from "@/componants/MapWithMarker";
 
 export default function AboutPage() {
   return (
-    <section className="min-h-screen py-26 px-10">
+    <section className="py-28 px-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text Section */}
         <div>

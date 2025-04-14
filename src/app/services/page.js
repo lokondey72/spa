@@ -8,11 +8,13 @@ const services = [
     title: 'Massage Therapy',
     description: 'Relax your muscles and mind with a soothing massage tailored to your needs.',
     icon: <Hand size={32} />,
+    image: "/Massage Therapy-1.jpg",
   },
   {
     title: 'Aromatherapy',
     description: 'Essential oils and scents to calm the senses and rejuvenate your spirit.',
     icon: <Flower2 size={32} />,
+    image: "/Aromatherapy-1.jpg",
   },
   {
     title: 'Facial Treatments',
@@ -52,6 +54,7 @@ export default function ServicesPage() {
               title={service.title}
               description={service.description}
               icon={service.icon}
+              img={service.image}
             />
           ))}
         </div>
