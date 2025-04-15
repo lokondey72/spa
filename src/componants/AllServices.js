@@ -60,14 +60,14 @@ export default function AllServices() {
         <h2 className="text-4xl font-bold text-emerald-700 mb-4">
           Our Services
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-500 mb-12">
           Experience relaxation and rejuvenation with our range of holistic
           therapies and treatments.
         </p>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-gray-700 text-lg font-medium hover:text-emerald-600 transition-colors flex items-center gap-1 pb-5"
+          className="text-gray-500 text-lg font-medium hover:text-emerald-600 transition-colors flex items-center gap-1 pb-5"
         >
           {isOpen ? (
             <>

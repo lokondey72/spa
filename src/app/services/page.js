@@ -88,7 +88,7 @@ export default function ServicesPage() {
     <section className="px-4 py-24">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-emerald-700 mb-4">Services</h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-500 mb-12">
           Experience relaxation and rejuvenation with our range of holistic therapies and treatments.
         </p>
 

@@ -9,12 +9,12 @@ export default function AboutPage() {
         {/* Text Section */}
         <div>
           <h2 className="text-4xl font-bold text-emerald-700 mb-4">About Us</h2>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-500 mb-4">
             Welcome to <strong>Serenity Touch</strong>, where we believe in the
             healing power of relaxation. Our certified massage therapists
             specialize in techniques that ease tension and promote wellness.
           </p>
-          <p className="text-gray-600">
+          <p className="text-gray-500">
             With a passion for holistic care, we offer a tranquil environment
             designed to help you unwind from everyday stress. Our mission is
             simple: to help you feel better — body, mind, and soul.

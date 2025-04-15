@@ -67,7 +67,7 @@ export default function HomeServices() {
                 <h2 className="text-2xl font-semibold text-rose-600 mb-2">
                   {service.title}
                 </h2>
-                <p className="text-gray-700 text-base">{service.description}</p>
+                <p className="text-gray-500 text-base">{service.description}</p>
               </div>
             </div>
           </div>

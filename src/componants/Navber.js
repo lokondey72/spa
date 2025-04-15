@@ -44,7 +44,7 @@ export default function Navbar() {
             className="object-contain"
             priority
           /> */}
-          <h4 className="text-3xl font-semibold text-gray-700 hover:text-emerald-600 transition-colors">
+          <h4 className="text-3xl font-semibold text-gray-500 hover:text-emerald-600 transition-colors">
             Eurosespa
           </h4>
         </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
                 className={`${
                   pathname === menu.href
                     ? "text-emerald-600 font-semibold"
-                    : "text-gray-700"
+                    : "text-gray-500"
                 } hover:text-emerald-600 transition-colors`}
               >
                 {menu.name}
@@ -90,7 +90,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-700"
+          className="md:hidden text-gray-500"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -118,7 +118,7 @@ export default function Navbar() {
               className={`${
                 pathname === menu.href
                   ? "text-emerald-600 font-semibold"
-                  : "text-gray-700"
+                  : "text-gray-500"
               } hover:text-emerald-600 transition-colors text-lg`}
             >
               {menu.name}

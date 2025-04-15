@@ -35,7 +35,7 @@ export default function ContactPage() {
     <main className="min-h-screen py-26 px-4 sm:px-6 lg:px-20">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-emerald-600 mb-6">Contact Us</h1>
-        <p className="text-gray-600 mb-10">
+        <p className="text-gray-500 mb-10">
           We’d love to hear from you! Whether you have a question about
           services, pricing, or anything else — our team is ready to help.
         </p>
@@ -44,11 +44,11 @@ export default function ContactPage() {
         <div className="space-y-6 mb-10">
           <div className="flex items-center justify-center space-x-3">
             <FaPhoneAlt className="text-emerald-600 text-xl" />
-            <span className="text-gray-700 text-lg">+1 (555) 123-4567</span>
+            <span className="text-gray-500 text-lg">+880 1911-552077</span>
           </div>
           <div className="flex items-center justify-center space-x-3">
             <FaEnvelope className="text-emerald-600 text-xl" />
-            <span className="text-gray-700 text-lg">support@eurosespa.com</span>
+            <span className="text-gray-500 text-lg">eurosespabd@gmail.com</span>
           </div>
         </div>
 
