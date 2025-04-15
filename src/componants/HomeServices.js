@@ -7,7 +7,7 @@ const services = [
   {
     title: "Swedish Massage",
     description: "Relax your body and mind with classic Swedish techniques.",
-    image: "/Swedish-Massage-1.jpg",
+    image: "/Six-hand-massage-1.jpg",
   },
   {
     title: "Haircut Start",
