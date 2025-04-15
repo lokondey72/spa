@@ -77,6 +77,7 @@ export default function HomePage() {
   const [selectedProduct, setSelectedProduct] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [date, setDate] = useState("");
 
   const handleChange = (event) => {
     setSelectedProduct(event.target.value);
@@ -85,7 +86,7 @@ export default function HomePage() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!selectedProduct || !name || !phone) {
+    if (!selectedProduct || !name || !phone || !date) {
       alert("Please fill in all fields.");
       return;
     }
@@ -97,6 +98,7 @@ export default function HomePage() {
       user_phone: phone,
       product_title: product.title,
       product_price: product.price,
+      booking_date: date,
     };
 
     emailjs
@@ -110,6 +112,7 @@ export default function HomePage() {
         alert("Booking info sent successfully!");
         setName("");
         setPhone("");
+        setDate("");
         setSelectedProduct("");
       })
       .catch((error) => {
@@ -182,6 +185,34 @@ export default function HomePage() {
                   onChange={(e) => setPhone(e.target.value)}
                   className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
                 />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-500 mb-1">
+                  Booking Date
+                </label>
+                <div className="relative">
+                  <input
+                    type="date"
+                    value={date}
+                    onChange={(e) => setDate(e.target.value)}
+                    className="appearance-none w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  />
+                  <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-400">
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8 7V3M16 7V3M4 11h16M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
               <p className="text-gray-500">
