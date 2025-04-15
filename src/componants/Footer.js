@@ -114,9 +114,10 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Send message on Facebook Messenger"
             >
-              <div className="bg-blue-500 text-white p-2 rounded-full shadow-md hover:bg-blue-600">
-                <FaFacebookMessenger className="w-5 h-5" />
-              </div>
+                <FaFacebookMessenger 
+                size={24}
+                className="text-gray-400 hover:text-emerald-400" 
+                />
             </Link>
           </div>
         </div>
