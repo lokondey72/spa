@@ -29,7 +29,7 @@ const services = [
     title: "Sensual Massage",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
-    price: "Price: 5500 BDT",
+    price: "Price: 6000 BDT",
     image: "/Sensual-massage-1.jpg",
   },
   {

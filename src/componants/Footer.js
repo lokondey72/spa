@@ -2,6 +2,7 @@
 
 import { FaFacebook, FaWhatsapp, FaTwitter, FaLinkedin } from "react-icons/fa"; // Optional social icons
 import Link from "next/link";
+import { FaFacebookMessenger } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
             className="object-contain"
             priority
           /> */}
-            <h4 className="text-3xl font-semibold mb-4">Eurosespa</h4>
+            <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 mb-4">Eurosespa</h4>
           </Link>
           <p className="text-gray-400 text-sm">
             We provide the best wellness services to help you relax and
@@ -106,6 +107,16 @@ export default function Footer() {
                 size={24}
                 className="text-gray-400 hover:text-emerald-400"
               />
+            </Link>
+            <Link
+              href="https://www.facebook.com/messages/t/430567486797012"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send message on Facebook Messenger"
+            >
+              <div className="bg-blue-500 text-white p-2 rounded-full shadow-md hover:bg-blue-600">
+                <FaFacebookMessenger className="w-5 h-5" />
+              </div>
             </Link>
           </div>
         </div>

@@ -44,7 +44,7 @@ export default function Navbar() {
             className="object-contain"
             priority
           /> */}
-          <h4 className="text-3xl font-semibold text-gray-500 hover:text-emerald-600 transition-colors">
+          <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 transition-colors">
             Eurosespa
           </h4>
         </Link>
