@@ -19,7 +19,9 @@ export default function Footer() {
             className="object-contain"
             priority
           /> */}
-            <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 mb-4">Eurosespa</h4>
+            <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 mb-4">
+              Eurosespa
+            </h4>
           </Link>
           <p className="text-gray-400 text-sm">
             We provide the best wellness services to help you relax and
@@ -114,10 +116,10 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Send message on Facebook Messenger"
             >
-                <FaFacebookMessenger 
+              <FaFacebookMessenger
                 size={24}
-                className="text-gray-400 hover:text-emerald-400" 
-                />
+                className="text-gray-400 hover:text-emerald-400"
+              />
             </Link>
           </div>
         </div>
@@ -128,7 +130,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Eurosespa. All Rights Reserved.
         </p>
         <p className="text-gray-400 text-sm">
-          Developed By The &copy; {new Date().getFullYear()} Tahzglobal
+          Developed By The &copy; Tahzglobal
           {/* <Link href="https://tahzglobal.com/" target="_blank" rel="noopener noreferrer">
           <Link/> */}
         </p>
