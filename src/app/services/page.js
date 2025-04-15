@@ -5,36 +5,46 @@ import { Heart, Sparkles, Leaf, Hand, Flower2, Smile } from 'lucide-react';
 
 const services = [
   {
-    title: 'Massage Therapy',
-    description: 'Relax your muscles and mind with a soothing massage tailored to your needs.',
-    icon: <Hand size={32} />,
-    image: "/Massage Therapy-1.jpg",
+    title: "Dry Massage",
+    description:
+      "Relax your muscles and mind with a soothing massage tailored to your needs.",
+    price: "Price: 3000 BDT",
+    image: "/Dry-massage-1.jpg",
   },
   {
-    title: 'Aromatherapy',
-    description: 'Essential oils and scents to calm the senses and rejuvenate your spirit.',
-    icon: <Flower2 size={32} />,
+    title: "Oil Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 3500 BDT",
+    image: "/Oil-massage-1.jpg",
+  },
+  {
+    title: "Aromatherapy",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 5500 BDT",
     image: "/Aromatherapy-1.jpg",
   },
   {
-    title: 'Facial Treatments',
-    description: 'Nourish your skin with revitalizing facial therapies.',
-    icon: <Smile size={32} />,
+    title: "Sensual Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 5500 BDT",
+    image: "/Sensual-massage-1.jpg",
   },
   {
-    title: 'Hot Stone Massage',
-    description: 'Melt away stress with the warmth of volcanic stones.',
-    icon: <Leaf size={32} />,
+    title: "Nuru Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 8000 BDT",
+    image: "/Nuru-massage-1.jpg",
   },
   {
-    title: 'Body Scrubs',
-    description: 'Exfoliate and refresh your body for glowing, soft skin.',
-    icon: <Sparkles size={32} />,
-  },
-  {
-    title: 'Reflexology',
-    description: 'Healing pressure point treatment that supports overall well-being.',
-    icon: <Heart size={32} />,
+    title: "Body To Body Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 9500 BDT",
+    image: "/Body-to-body-massage-1.jpg",
   },
 ];
 
@@ -53,8 +63,8 @@ export default function ServicesPage() {
               key={index}
               title={service.title}
               description={service.description}
-              icon={service.icon}
-              img={service.image}
+              price={service.price}
+              image={service.image}
             />
           ))}
         </div>

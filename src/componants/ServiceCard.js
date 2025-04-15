@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function ServiceCard({ img, icon, title, description }) {
+export default function ServiceCard({ img, price, title, description }) {
   return (
     <div className="group relative bg-white rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300 ease-in-out">
       <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
@@ -16,7 +16,7 @@ export default function ServiceCard({ img, icon, title, description }) {
       </div>
 
       <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-      <p className="mt-2 text-gray-600 text-sm">{description}</p>
+      <p className="mt-2 text-gray-600 text-sm">{price}</p>
 
       <Link
         href="/choice"
@@ -26,8 +26,8 @@ export default function ServiceCard({ img, icon, title, description }) {
       </Link>
 
       {/* WhatsApp button appears on hover */}
-      <a
-        href="https://wa.me/1234567890" // Replace with your WhatsApp number
+      <Link
+        href="https://wa.me/+8801911552077" // Replace with your WhatsApp number
         target="_blank"
         rel="noopener noreferrer"
         className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -48,7 +48,7 @@ export default function ServiceCard({ img, icon, title, description }) {
             />
           </svg>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

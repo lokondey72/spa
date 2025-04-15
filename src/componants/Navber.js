@@ -64,12 +64,12 @@ export default function Navbar() {
         </nav>
 
         {/* Cart Icon */}
-        <Link
+        {/* <Link
           href="/choice"
           className="text-2xl text-gray-700 hover:text-emerald-600 transition-colors md:ml-6"
         >
           <FaShoppingCart />
-        </Link>
+        </Link> */}
 
         {/* Mobile Menu Button */}
         <button

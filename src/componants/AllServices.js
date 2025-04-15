@@ -8,40 +8,46 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Massage Therapy",
+    title: "Dry Massage",
     description:
       "Relax your muscles and mind with a soothing massage tailored to your needs.",
-    icon: <Hand size={32} />,
-    image: "/Massage Therapy-1.jpg",
+    price: "Price: 3000 BDT",
+    image: "/Dry-massage-1.jpg",
+  },
+  {
+    title: "Oil Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 3500 BDT",
+    image: "/Oil-massage-1.jpg",
   },
   {
     title: "Aromatherapy",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
-    icon: <Flower2 size={32} />,
+    price: "Price: 5500 BDT",
     image: "/Aromatherapy-1.jpg",
   },
   {
-    title: "Haircut Start",
-    description: "Nourish your skin with revitalizing facial therapies.",
-    icon: <Smile size={32} />,
-    image: "/Haircut Start.jpg",
-  },
-  {
-    title: "Hot Stone Massage",
-    description: "Melt away stress with the warmth of volcanic stones.",
-    icon: <Leaf size={32} />,
-  },
-  {
-    title: "Body Scrubs",
-    description: "Exfoliate and refresh your body for glowing, soft skin.",
-    icon: <Sparkles size={32} />,
-  },
-  {
-    title: "Reflexology",
+    title: "Sensual Massage",
     description:
-      "Healing pressure point treatment that supports overall well-being.",
-    icon: <Heart size={32} />,
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 5500 BDT",
+    image: "/Sensual-massage-1.jpg",
+  },
+  {
+    title: "Nuru Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 8000 BDT",
+    image: "/Nuru-massage-1.jpg",
+  },
+  {
+    title: "Body To Body Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 9500 BDT",
+    image: "/Body-to-body-massage-1.jpg",
   },
 ];
 
@@ -86,7 +92,7 @@ export default function AllServices() {
               key={index}
               title={service.title}
               description={service.description}
-              icon={service.icon}
+              price={service.price}
               img={service.image}
             />
           ))}

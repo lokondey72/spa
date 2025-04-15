@@ -2,12 +2,15 @@
 
 import Head from "next/head";
 import Image from "next/image";
+import { useDataStore } from '@/store/useDataStore'
 
 export default function ProductPage() {
+  const data = useDataStore(state => state.data)
+
   return (
     <>
       <Head>
-        <title>ShopEase | Wireless Headphones</title>
+        <title>{data.title}</title>
         <meta
           name="description"
           content="Premium wireless headphones with noise-cancellation and 30-hour battery life."

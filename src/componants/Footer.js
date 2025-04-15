@@ -41,25 +41,24 @@ export default function Footer() {
         <div className="flex flex-col justify-center">
           <h4 className="text-2xl font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
-            <a href="https://www.facebook.com/share/16A3MYTHnv" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.facebook.com/share/16A3MYTHnv" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={24} className="text-gray-400 hover:text-emerald-400" />
-            </a>
-            <a href="https://wa.me/+8801911552077" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link href="https://wa.me/+8801911552077" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp size={24} className="text-gray-400 hover:text-emerald-400" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter size={24} className="text-gray-400 hover:text-emerald-400" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin size={24} className="text-gray-400 hover:text-emerald-400" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
 
-      <div className="mt-8 border-t border-gray-700 pt-6 text-center">
+      <div className="md:flex items-center justify-between mt-8 border-t border-gray-700 pt-6">
         <p className="text-gray-400 text-sm">
-          &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+          &copy; {new Date().getFullYear()} Eurosespa. All Rights Reserved.
+        </p>
+        <p className="text-gray-400 text-sm">
+          Developed By The &copy; {new Date().getFullYear()} Tahzglobal
+          {/* <Link href="https://tahzglobal.com/" target="_blank" rel="noopener noreferrer">
+          <Link/> */}
         </p>
       </div>
     </footer>
