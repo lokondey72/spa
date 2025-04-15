@@ -36,32 +36,48 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
         {/* Logo */}
         <Link href="/">
-          <Image
+          {/* <Image
             src="/Eurosespa-logo.png"
             alt="Eurosespa Logo"
             width={70}
             height={70}
             className="object-contain"
             priority
-          />
+          /> */}
+          <h4 className="text-3xl font-semibold text-gray-700 hover:text-emerald-600 transition-colors">
+            Eurosespa
+          </h4>
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:inline-flex gap-10 text-lg font-medium">
-          {Menus.map((menu) => (
+        {/* Desktop Nav Centered */}
+        <div className="hidden md:flex items-center w-full relative">
+          {/* Centered Nav */}
+          <nav className="absolute left-1/2 -translate-x-1/2 flex gap-10 text-lg font-medium">
+            {Menus.map((menu) => (
+              <Link
+                key={menu.name}
+                href={menu.href}
+                className={`${
+                  pathname === menu.href
+                    ? "text-emerald-600 font-semibold"
+                    : "text-gray-700"
+                } hover:text-emerald-600 transition-colors`}
+              >
+                {menu.name}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Book Now Button on Right */}
+          <div className="ml-auto">
             <Link
-              key={menu.name}
-              href={menu.href}
-              className={`${
-                pathname === menu.href
-                  ? "text-emerald-600 font-semibold"
-                  : "text-gray-700"
-              } hover:text-emerald-600 transition-colors`}
+              href="/choice"
+              className="bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-700 transition"
             >
-              {menu.name}
+              Book Now
             </Link>
-          ))}
-        </nav>
+          </div>
+        </div>
 
         {/* Cart Icon */}
         {/* <Link
@@ -108,6 +124,13 @@ export default function Navbar() {
               {menu.name}
             </Link>
           ))}
+          <Link
+            href="/choice"
+            onClick={() => setIsOpen(false)}
+            className="bg-emerald-600 text-white px-4 py-2 rounded-md text-center text-sm font-medium hover:bg-emerald-700 transition mt-4"
+          >
+            Book Now
+          </Link>
         </nav>
       </div>
 

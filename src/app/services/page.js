@@ -46,13 +46,48 @@ const services = [
     price: "Price: 9500 BDT",
     image: "/Body-to-body-massage-1.jpg",
   },
+  {
+    title: "Four Hand Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 16500 BDT",
+    image: "/Four-hand-massage-1.jpg",
+  },
+  {
+    title: "Six Hand Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 26000 BDT",
+    image: "/Six-hand-massage-1.jpg",
+  },
+  {
+    title: "Haircut",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 990 BDT",
+    image: "/Haircut-Start.jpg",
+  },
+  {
+    title: "SHAVE",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 9900 BDT",
+    image: "/SHAVE-START-1.jpg",
+  },
+  {
+    title: "PEDICURE MANICURE",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 5000 BDT",
+    image: "/PEDICURE-MANICURE-1.jpg",
+  },
 ];
 
 export default function ServicesPage() {
   return (
-    <section className="px-4 py-26">
+    <section className="px-4 py-24">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-emerald-700 mb-4">Our Services</h2>
+        <h2 className="text-4xl font-bold text-emerald-700 mb-4">Services</h2>
         <p className="text-gray-600 mb-12">
           Experience relaxation and rejuvenation with our range of holistic therapies and treatments.
         </p>
@@ -64,7 +99,7 @@ export default function ServicesPage() {
               title={service.title}
               description={service.description}
               price={service.price}
-              image={service.image}
+              img={service.image}
             />
           ))}
         </div>

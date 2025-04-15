@@ -12,7 +12,7 @@ const services = [
   {
     title: "Haircut Start",
     description: "Target deeper layers of muscle and connective tissue.",
-    image: "/Haircut Start.jpg",
+    image: "/Haircut-Start.jpg",
   },
   {
     title: "Oil massage",
