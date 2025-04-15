@@ -3,6 +3,7 @@
 import { FaFacebook, FaWhatsapp, FaTwitter, FaLinkedin } from "react-icons/fa"; // Optional social icons
 import Link from "next/link";
 import { FaFacebookMessenger } from "react-icons/fa";
+import { IoCallSharp } from "react-icons/io5";
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
             priority
           /> */}
             <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 mb-4">
-              Eurosespa
+              EuRosespa
             </h4>
           </Link>
           <p className="text-gray-400 text-sm">
@@ -117,6 +118,17 @@ export default function Footer() {
               aria-label="Send message on Facebook Messenger"
             >
               <FaFacebookMessenger
+                size={24}
+                className="text-gray-400 hover:text-emerald-400"
+              />
+            </Link>
+            <Link
+              href="tel:+8801911552077"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Call phone number"
+            >
+              <IoCallSharp
                 size={24}
                 className="text-gray-400 hover:text-emerald-400"
               />

@@ -36,16 +36,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
         {/* Logo */}
         <Link href="/">
-          {/* <Image
-            src="/Eurosespa-logo.png"
-            alt="Eurosespa Logo"
-            width={70}
-            height={70}
-            className="object-contain"
-            priority
-          /> */}
           <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 transition-colors">
-            Eurosespa
+            EuRosespa
           </h4>
         </Link>
 
