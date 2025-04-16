@@ -22,11 +22,11 @@ const services = [
     image: "/Oil-massage-1.jpg",
   },
   {
-    title: "Aromatherapy",
+    title: "Aroma Therapy Massage",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 5500 BDT",
-    image: "/Aromatherapy-1.jpg",
+    image: "/Aroma-Therapy-Massage-1.jpg",
   },
   {
     title: "Sensual Massage",

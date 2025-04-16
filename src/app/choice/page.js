@@ -18,10 +18,10 @@ const products = [
     image: "/Oil-massage-1.jpg",
   },
   {
-    title: "Aromatherapy",
+    title: "Aroma Therapy Massage",
     slug: "Aromatherapy",
     price: "5500 BDT",
-    image: "/Aromatherapy-1.jpg",
+    image: "/Aroma-Therapy-Massage-1.jpg",
   },
   {
     title: "Sensual Massage",
