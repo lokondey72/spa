@@ -1,10 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/componants/Navber";
-import Footer from "@/componants/Footer";
+import Navbar from "@/src/components/Navber";
+import Footer from "@/src/components/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import FloatingButton from "../componants/FloatingButton";
+import FloatingButton from "../components/FloatingButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import MapWithMarker from "@/componants/MapWithMarker";
+import MapWithMarker from "@/src/components/MapWithMarker";
 
 export default function AboutPage() {
   return (

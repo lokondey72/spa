@@ -1,8 +1,7 @@
 "use client";
 
-
-import ServiceCard from '@/src/componants/ServiceCard';
-import { Heart, Sparkles, Leaf, Hand, Flower2, Smile } from 'lucide-react';
+import ServiceCard from "@/src/components/ServiceCard";
+import { Heart, Sparkles, Leaf, Hand, Flower2, Smile } from "lucide-react";
 
 const services = [
   {
@@ -90,7 +89,8 @@ export default function ServicesPage() {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-emerald-700 mb-4">Services</h2>
         <p className="text-gray-500 mb-12">
-          Experience relaxation and rejuvenation with our range of holistic therapies and treatments.
+          Experience relaxation and rejuvenation with our range of holistic
+          therapies and treatments.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

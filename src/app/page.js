@@ -1,10 +1,10 @@
 "use client";
 
-import Banner from "@/componants/Banner";
+import Banner from "@/src/components/Banner";
 import AboutPage from "./about/page";
-import TimeDuration from "@/componants/TimeDuration";
-import AllServices from "@/componants/AllServices";
-import ProductSlider from "../componants/ProductSlider";
+import TimeDuration from "@/src/components/TimeDuration";
+import AllServices from "@/src/components/AllServices";
+import ProductSlider from "../components/ProductSlider";
 import CounterSection from "./CounterSection";
 // import Image from "next/image";
 // import ServicesPage from "./services/page";

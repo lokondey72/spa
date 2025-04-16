@@ -1,6 +1,6 @@
 "use client";
 
-import ServiceCard from "@/componants/ServiceCard";
+import ServiceCard from "@/src/components/ServiceCard";
 import { Heart, Sparkles, Leaf, Hand, Flower2, Smile } from "lucide-react";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -48,6 +48,27 @@ const services = [
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 9500 BDT",
     image: "/Body-to-body-massage-1.jpg",
+  },
+  {
+    title: "Four Hand Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 16500 BDT",
+    image: "/Four-hand-massage-1.jpg",
+  },
+  {
+    title: "Six Hand Massage",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 26000 BDT",
+    image: "/Six-hand-massage-1.jpg",
+  },
+  {
+    title: "Haircut",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 990 BDT",
+    image: "/Haircut-Start.jpg",
   },
 ];
 
