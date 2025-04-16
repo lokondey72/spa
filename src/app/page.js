@@ -1,10 +1,14 @@
-import Image from "next/image";
+"use client";
+
 import Banner from "@/componants/Banner";
-import ServicesPage from "./services/page";
 import AboutPage from "./about/page";
 import TimeDuration from "@/componants/TimeDuration";
-import HomeServices from "@/componants/HomeServices";
 import AllServices from "@/componants/AllServices";
+import ProductSlider from "../componants/ProductSlider";
+import CounterSection from "./CounterSection";
+// import Image from "next/image";
+// import ServicesPage from "./services/page";
+// import HomeServices from "@/componants/HomeServices";
 
 export default function Home() {
   return (
@@ -12,8 +16,10 @@ export default function Home() {
       <div>
         <Banner />
         <TimeDuration />
-        <HomeServices />
+        {/* <HomeServices /> */}
         <AllServices/>
+        <CounterSection/>
+        <ProductSlider/>
         <AboutPage />
       </div>
     </main>

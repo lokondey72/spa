@@ -36,8 +36,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
         {/* Logo */}
         <Link href="/">
-          <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 transition-colors">
-            EuRosespa
+          <h4 className="text-2xl font-bold text-emerald-600 whitespace-nowrap">
+            EuRose Spa
           </h4>
         </Link>
 

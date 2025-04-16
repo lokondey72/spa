@@ -1,6 +1,7 @@
 "use client";
 
-import ServiceCard from '@/componants/ServiceCard';
+
+import ServiceCard from '@/src/componants/ServiceCard';
 import { Heart, Sparkles, Leaf, Hand, Flower2, Smile } from 'lucide-react';
 
 const services = [

@@ -4,6 +4,7 @@ import Navbar from "@/componants/Navber";
 import Footer from "@/componants/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import FloatingButton from "../componants/FloatingButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <FloatingButton />
         <Footer />
       </body>
     </html>

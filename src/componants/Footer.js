@@ -12,17 +12,9 @@ export default function Footer() {
         {/* Company Info Section */}
         <div>
           <Link href="/">
-            {/* <Image
-            src="/Eurosespa-logo.png"
-            alt="Eurosespa Logo"
-            width={70}
-            height={70}
-            className="object-contain"
-            priority
-          /> */}
-            <h4 className="text-3xl font-semibold hover:text-gray-500 text-emerald-600 mb-4">
-              EuRosespa
-            </h4>
+          <h4 className="text-2xl font-bold text-emerald-600 whitespace-nowrap">
+            EuRose Spa
+          </h4>
           </Link>
           <p className="text-gray-400 text-sm">
             We provide the best wellness services to help you relax and
