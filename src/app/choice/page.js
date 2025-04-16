@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useSearchParams } from "next/navigation";
+import { useEffect } from "react";
 
 const products = [
   {
@@ -78,6 +80,14 @@ export default function HomePage() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [date, setDate] = useState("");
+
+  const searchParams = useSearchParams();
+    useEffect(() => {
+      const slug = searchParams.get("slug");
+      if (slug) {
+        setSelectedProduct(slug);
+      }
+    }, [searchParams]);
 
   const handleChange = (event) => {
     setSelectedProduct(event.target.value);

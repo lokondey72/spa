@@ -5,7 +5,7 @@ import Image from "next/image";
 import { IoLogoWhatsapp, IoCallSharp } from "react-icons/io5";
 import { FaFacebookMessenger } from "react-icons/fa";
 
-export default function ServiceCard({ img, price, title }) {
+export default function ServiceCard({ img, price, title, slug }) {
   return (
     <div className="group relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-1 transition duration-300 ease-in-out">
       {/* Image */}
@@ -61,9 +61,15 @@ export default function ServiceCard({ img, price, title }) {
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-400">{title}</h3>
         <p className="text-sm text-gray-600 mt-1">{price}</p>
-        <Link
+        {/* <Link
           href="/choice"
           className="inline-block mt-3 bg-emerald-500 text-white px-4 py-2 rounded-md text-sm hover:bg-emerald-600 transition"
+        >
+          Book a Session
+        </Link> */}
+        <Link
+          href={`/choice?slug=${slug}`}
+          className="inline-block mt-2 bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition"
         >
           Book a Session
         </Link>

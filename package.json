@@ -20,6 +20,7 @@
     "react-slick": "^0.30.3",
     "responsive-navigation": "^1.2.1",
     "slick-carousel": "^1.8.1",
+    "yet-another-react-lightbox": "^3.22.0",
     "zustand": "^5.0.3"
   },
   "devDependencies": {

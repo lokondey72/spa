@@ -9,6 +9,7 @@ import Link from "next/link";
 const services = [
   {
     title: "Dry Massage",
+    slug: "Dry", // Add slug
     description:
       "Relax your muscles and mind with a soothing massage tailored to your needs.",
     price: "Price: 3000 BDT",
@@ -16,6 +17,7 @@ const services = [
   },
   {
     title: "Oil Massage",
+    slug: "hoodie", // Add slug
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 3500 BDT",
@@ -23,6 +25,7 @@ const services = [
   },
   {
     title: "Aroma Therapy Massage",
+    slug: "AromaTherapy", // Add slug
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 5500 BDT",
@@ -30,6 +33,7 @@ const services = [
   },
   {
     title: "Sensual Massage",
+    slug: "Sensual", // Add slug
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 6000 BDT",
@@ -37,6 +41,7 @@ const services = [
   },
   {
     title: "Nuru Massage",
+    slug: "Nuru", // Add slug
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 8000 BDT",
@@ -44,6 +49,7 @@ const services = [
   },
   {
     title: "Body To Body Massage",
+    slug: "BodyToBody",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 9500 BDT",
@@ -51,6 +57,7 @@ const services = [
   },
   {
     title: "Four Hand Massage",
+    slug: "FourHand",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 16500 BDT",
@@ -58,6 +65,7 @@ const services = [
   },
   {
     title: "Six Hand Massage",
+    slug: "SixHand",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 26000 BDT",
@@ -65,6 +73,7 @@ const services = [
   },
   {
     title: "Haircut",
+    slug: "Haircut",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 990 BDT",
@@ -115,6 +124,7 @@ export default function AllServices() {
               description={service.description}
               price={service.price}
               img={service.image}
+              slug={service.slug}
             />
           ))}
         </div>
