@@ -123,7 +123,7 @@ export default function HomePage() {
 
   return (
     <main className="max-w-6xl mx-auto min-h-screen pt-20 px-4 sm:px-6 lg:px-20">
-      <h1 className="text-3xl font-bold mt-8 text-gray-500">
+      <h1 className="text-3xl font-bold mt-8 text-emerald-700">
         Select a Service
       </h1>
 
@@ -158,7 +158,7 @@ export default function HomePage() {
             </div>
 
             <div className="w-full md:w-1/2 space-y-4">
-              <p className="font-semibold text-gray-500">
+              <p className="font-semibold text-2xl text-emerald-700">
                 {products.find((p) => p.slug === selectedProduct).title}
               </p>
               <div>

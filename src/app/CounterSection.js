@@ -11,7 +11,7 @@ export default function CounterSection() {
           <Counter target={5} label="Years Experience" />
           <Counter target={200} label="Happy Clients" />
           <Counter target={1200} label="Bookings Completed" />
-          <Counter target={12} label="Treatments Offered" />
+          <Counter target={11} label="Treatments Offered" />
         </div>
       </div>
     </section>

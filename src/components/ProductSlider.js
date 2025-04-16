@@ -4,14 +4,17 @@ import { useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
-  { id: 1, name: "Aroma Therapy", price: "₹1200" },
-  { id: 2, name: "Swedish Massage", price: "₹1500" },
-  { id: 3, name: "Hot Stone Therapy", price: "₹1800" },
-  { id: 4, name: "Deep Tissue Massage", price: "₹1700" },
-  { id: 5, name: "Body Scrub", price: "₹1400" },
-  { id: 6, name: "Foot Massage", price: "₹1300" },
-  { id: 7, name: "Facial Glow", price: "₹1100" },
-  { id: 8, name: "Back Therapy", price: "₹1250" },
+  { id: 1, name: "Dry Massage", price: "3000 BDT" },
+  { id: 2, name: "Oil Massage", price: "3500 BDT" },
+  { id: 3, name: "Aromatherapy", price: "5500 BDT" },
+  { id: 4, name: "Sensual Massage", price: "6000 BDT" },
+  { id: 5, name: "Nuru Massage", price: "8000 BDT" },
+  { id: 6, name: "Body To Body Massage", price: "9500 BDT" },
+  { id: 7, name: "Four Hand Massage", price: "16500 BDT" },
+  { id: 8, name: "Six Hand Massage", price: "26000 BDT" },
+  { id: 9, name: "Haircut", price: "990 BDT" },
+  { id: 10, name: "SHAVE", price: "9900 BDT" },
+  { id: 11, name: "PEDICURE MANICURE", price: "5000 BDT" },
 ];
 
 export default function ProductSlider() {
@@ -56,14 +59,14 @@ export default function ProductSlider() {
           <div className="space-x-2 hidden sm:block">
             <button
               onClick={() => scroll("left")}
-              className="p-2 rounded-full bg-white border shadow hover:bg-emerald-100 transition"
+              className="p-2 rounded-full text-emerald-700 bg-white border shadow hover:bg-emerald-100 transition"
               aria-label="Scroll left"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={() => scroll("right")}
-              className="p-2 rounded-full bg-white border shadow hover:bg-emerald-100 transition"
+              className="p-2 rounded-full text-emerald-700 bg-white border shadow hover:bg-emerald-100 transition"
               aria-label="Scroll right"
             >
               <ChevronRight className="w-5 h-5" />
