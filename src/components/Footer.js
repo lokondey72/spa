@@ -78,8 +78,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              Location: 101, Gulshan Avenue, Road 37, House 101, Gulshan 2,
-              Dhaka 1212, Bangladesh.
+              Location: Gulshan 2, Road 41, House 7/a, Dhaka 1212, Bangladesh.
             </li>
           </ul>
         </div>

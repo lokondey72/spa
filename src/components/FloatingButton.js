@@ -17,7 +17,12 @@ export default function FloatingButtons() {
       <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
         <button
           onClick={handleWhatsAppClick}
-          className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-xl transition duration-300 ease-in-out"
+          className="
+            bg-green-600 hover:bg-green-700 
+            text-white p-4 rounded-full shadow-xl 
+            transition duration-300 ease-in-out 
+            animate-bounce
+          "
           aria-label="Chat on WhatsApp"
         >
           <MessageCircle className="w-5 h-5" />
@@ -28,7 +33,12 @@ export default function FloatingButtons() {
       <div className="fixed bottom-4 left-4 z-50 sm:bottom-6 sm:left-6">
         <button
           onClick={handlePhoneClick}
-          className="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-xl transition duration-300 ease-in-out"
+          className="
+            bg-emerald-600 hover:bg-emerald-700 
+            text-white p-4 rounded-full shadow-xl 
+            transition duration-300 ease-in-out 
+            animate-bounce
+          "
           aria-label="Call Us"
         >
           <PhoneCall className="w-5 h-5" />

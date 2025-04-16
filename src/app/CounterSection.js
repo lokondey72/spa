@@ -9,7 +9,7 @@ export default function CounterSection() {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
           <Counter target={5} label="Years Experience" />
-          <Counter target={200} label="Happy Clients" />
+          <Counter target={1000} label="Happy Clients" />
           <Counter target={1200} label="Bookings Completed" />
           <Counter target={11} label="Treatments Offered" />
         </div>
