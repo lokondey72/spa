@@ -75,7 +75,18 @@ export default function ContactPage() {
               type="text"
               name="user_name"
               required
-              className="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-emerald-500 focus:border-emerald-500"
+              className="mt-1 w-full border text-gray-500 border-gray-300 rounded-md px-4 py-2 focus:ring-emerald-500 focus:border-emerald-500"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              name="user_phone"
+              required
+              className="mt-1 w-full border text-gray-500 border-gray-300 rounded-md px-4 py-2 focus:ring-emerald-500 focus:border-emerald-500"
             />
           </div>
           <div>
@@ -86,7 +97,7 @@ export default function ContactPage() {
               type="email"
               name="user_email"
               required
-              className="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-emerald-500 focus:border-emerald-500"
+              className="mt-1 w-full border text-gray-500 border-gray-300 rounded-md px-4 py-2 focus:ring-emerald-500 focus:border-emerald-500"
             />
           </div>
           <div>
@@ -97,7 +108,7 @@ export default function ContactPage() {
               name="message"
               rows="4"
               required
-              className="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-emerald-500 focus:border-emerald-500"
+              className="mt-1 w-full border text-gray-500 border-gray-300 rounded-md px-4 py-2 focus:ring-emerald-500 focus:border-emerald-500"
             ></textarea>
           </div>
           <button
