@@ -5,6 +5,9 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
+import { Suspense } from "react";
+import BookingForm from "./BookingForm";
+
 
 const products = [
   {
@@ -80,8 +83,8 @@ export default function HomePage() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [date, setDate] = useState("");
-
   const searchParams = useSearchParams();
+
     useEffect(() => {
       const slug = searchParams.get("slug");
       if (slug) {
@@ -136,6 +139,9 @@ export default function HomePage() {
       <h1 className="text-3xl font-bold mt-8 text-emerald-700">
         Select a Service
       </h1>
+      <Suspense fallback={<div className="p-8 text-lg">Loading...</div>}>
+      <BookingForm />
+    </Suspense>
 
       <form onSubmit={handleSubmit} className="mb-5 space-y-4">
         <div>
