@@ -107,13 +107,13 @@ export default function ChoicePage() {
       return;
     }
 
-    const product = products.find((p) => p.slug === selectedProduct);
+    const selected = products.find((p) => p.slug === selectedProduct);
 
     const templateParams = {
       user_name: name,
       user_phone: phone,
-      product_title: product.title,
-      product_price: product.price,
+      product_title: selected.title,
+      product_price: selected.price,
       booking_date: date,
     };
 
