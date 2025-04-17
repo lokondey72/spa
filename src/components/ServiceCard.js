@@ -33,7 +33,7 @@ export default function ServiceCard({ img, price, title, slug }) {
 
           {/* Messenger */}
           <Link
-            href="https://m.me/www.facebook.com/messages/t/430567486797012"
+            href="https://m.me/EuRose.Spa"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Send message on Facebook Messenger"
