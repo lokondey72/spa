@@ -8,7 +8,6 @@ import { useEffect } from "react";
 import { Suspense } from "react";
 import BookingForm from "./BookingForm";
 
-
 const products = [
   {
     title: "Dry Massage",
@@ -85,12 +84,12 @@ export default function HomePage() {
   const [date, setDate] = useState("");
   const searchParams = useSearchParams();
 
-    useEffect(() => {
-      const slug = searchParams.get("slug");
-      if (slug) {
-        setSelectedProduct(slug);
-      }
-    }, [searchParams]);
+  useEffect(() => {
+    const slug = searchParams.get("slug");
+    if (slug) {
+      setSelectedProduct(slug);
+    }
+  }, [searchParams]);
 
   const handleChange = (event) => {
     setSelectedProduct(event.target.value);
@@ -140,8 +139,8 @@ export default function HomePage() {
         Select a Service
       </h1>
       <Suspense fallback={<div className="p-8 text-lg">Loading...</div>}>
-      <BookingForm />
-    </Suspense>
+        <BookingForm />
+      </Suspense>
 
       <form onSubmit={handleSubmit} className="mb-5 space-y-4">
         <div>
