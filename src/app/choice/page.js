@@ -81,7 +81,7 @@ const products = [
 // app/choice/page.js
 export const dynamic = "force-dynamic";
 
-export default function choicePage() {
+export default function ChoicePage() {
   const [selectedProduct, setSelectedProduct] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
