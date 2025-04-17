@@ -32,7 +32,7 @@ const OpenStatus = () => {
     // Optional: update every minute
     const interval = setInterval(checkOpenStatus, 60000);
     return () => clearInterval(interval);
-  }, []);
+  }, [openDays]);
 
   return (
     <div
