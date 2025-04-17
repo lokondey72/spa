@@ -111,7 +111,7 @@ export default function Footer() {
               />
             </Link>
             <Link
-              href="https://www.facebook.com/messages/t/430567486797012"
+              href="https://m.me/EuRose.Spa"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Messenger"
