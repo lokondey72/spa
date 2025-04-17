@@ -14,7 +14,7 @@ export default function FloatingButtons() {
   return (
     <>
       {/* WhatsApp Button - Right */}
-      <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
+      <div className="fixed bottom-4 left-4 z-50 sm:bottom-6 sm:left-6">
         <button
           onClick={handleWhatsAppClick}
           className="
@@ -30,7 +30,7 @@ export default function FloatingButtons() {
       </div>
 
       {/* Phone Call Button - Left */}
-      <div className="fixed bottom-4 left-4 z-50 sm:bottom-6 sm:left-6">
+      <div className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6">
         <button
           onClick={handlePhoneClick}
           className="
