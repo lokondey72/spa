@@ -7,6 +7,7 @@ import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import { Suspense } from "react";
 import BookingForm from "./BookingForm";
+import ChoiceContent from "./ChoiceContent";
 
 const products = [
   {
@@ -76,6 +77,9 @@ const products = [
     image: "/PEDICURE-MANICURE-1.jpg",
   },
 ];
+
+// app/choice/page.js
+export const dynamic = "force-dynamic";
 
 export default function HomePage() {
   const [selectedProduct, setSelectedProduct] = useState("");
