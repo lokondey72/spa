@@ -22,6 +22,8 @@ export default function Banner() {
     { id: 2, image: "/banner-img-2.jpg", alt: "Slide 2" },
     { id: 3, image: "/banner-img-3.jpg", alt: "Slide 3" },
     { id: 4, image: "/banner-img-4.jpg", alt: "Slide 4" },
+    { id: 5, image: "/banner-img-5.jpg", alt: "Slide 5" },
+    { id: 6, image: "/banner-img-6.jpg", alt: "Slide 6" },
   ];
 
   return (
