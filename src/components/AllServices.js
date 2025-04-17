@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Aroma Therapy Massage",
-    slug: "AromaTherapy", // Add slug
+    slug: "Aromatherapy", // Add slug
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 5500 BDT",

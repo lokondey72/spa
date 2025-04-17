@@ -8,5 +8,7 @@ import { useSearchParams } from "next/navigation";
 // ... your products array here
 
 export default function BookingForm() {
-  // ... all your code exactly as-is
+  const searchParams = useSearchParams()
+  
+  return <input placeholder="Search..." />;
 }
