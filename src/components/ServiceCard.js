@@ -18,7 +18,7 @@ export default function ServiceCard({ img, price, title, slug }) {
         />
 
         {/* Hover contact icons (always visible on mobile) */}
-        <div className="absolute top-4 right-2 opacity-100 sm:opacity-0 group-hover:sm:opacity-100 transition-opacity duration-300 space-y-2 z-20">
+        <div className="absolute top-4 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 space-y-2 z-20">
           {/* WhatsApp */}
           <Link
             href="https://wa.me/+8801911552077"
