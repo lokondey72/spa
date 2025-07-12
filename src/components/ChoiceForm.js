@@ -68,10 +68,22 @@ const products = [
     image: "/SHAVE-START-1.jpg",
   },
   {
-    title: "PEDICURE MANICURE",
+    title: "MANICURE",
+    slug: "MANICURE",
+    price: "1200 BDT",
+    image: "/MANICURE-only.jpg",
+  },
+  {
+    title: "PEDICURE",
     slug: "PEDICURE",
-    price: "5000 BDT",
+    price: "1200 BDT",
     image: "/PEDICURE-MANICURE-1.jpg",
+  },
+  {
+    title: "VIP LOUNGE",
+    slug: "VIPLOUNGE",
+    price: "**** BDT",
+    image: "/VIP LOUNGE (1).jpeg",
   },
 ];
 
@@ -207,6 +219,7 @@ export default function ChoiceForm() {
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
+                min={new Date().toISOString().split("T")[0]} // sets today as minimum date
                 className="w-full px-4 py-2 border rounded-lg"
               />
             </div>

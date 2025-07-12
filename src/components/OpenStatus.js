@@ -4,12 +4,12 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 const OpenStatus = () => {
-  // Set opening and closing time (24-hour format)
-  const openingHour = 9; // 9 AM
-  const closingHour = 21; // 9 PM
+  // Updated service hours: 9 AM to 11 PM
+  const openingHour = 9;
+  const closingHour = 23;
 
-  // Set days open (0 = Sunday, 6 = Saturday)
-  const openDays = [1, 2, 3, 4, 5, 6, 7]; // Monday to Friday
+  // Days open: 0 (Sunday) to 6 (Saturday)
+  const openDays = [0, 1, 2, 3, 4, 5, 6];
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,10 +29,9 @@ const OpenStatus = () => {
 
     checkOpenStatus();
 
-    // Optional: update every minute
-    const interval = setInterval(checkOpenStatus, 60000);
+    const interval = setInterval(checkOpenStatus, 60000); // check every minute
     return () => clearInterval(interval);
-  }, [openDays]);
+  }, []);
 
   return (
     <div
@@ -43,7 +42,7 @@ const OpenStatus = () => {
       <h2 className="text-xl font-semibold">
         {isOpen ? "🟢 We are Open now!" : "🔴 Sorry, We are Closed."}
       </h2>
-      <p className="text-sm mt-1">Service hours: 9:00 AM – 9:00 PM </p>
+      <p className="text-sm mt-1">Service hours: 9:00 AM – 11:00 PM</p>
       <h3 className="pt-5">
         {isOpen ? (
           <Link
@@ -53,9 +52,9 @@ const OpenStatus = () => {
             Book a Session
           </Link>
         ) : (
-          <p className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-md hover:bg-emerald-700 transition">
+          <span className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-md opacity-50 cursor-not-allowed">
             Try Tomorrow
-          </p>
+          </span>
         )}
       </h3>
     </div>

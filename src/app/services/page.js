@@ -85,12 +85,28 @@ const services = [
     image: "/SHAVE-START-1.jpg",
   },
   {
-    title: "PEDICURE MANICURE",
+    title: "MANICURE",
+    slug: "MANICURE",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: 1200 BDT",
+    image: "/MANICURE-only.jpg",
+  },
+  {
+    title: "PEDICURE",
     slug: "PEDICURE",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
-    price: "Price: 5000 BDT",
+    price: "Price: 1200 BDT",
     image: "/PEDICURE-MANICURE-1.jpg",
+  },
+  {
+    title: "VIP LOUNGE",
+    slug: "VIPLOUNGE",
+    description:
+      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
+    price: "Price: **** BDT",
+    image: "/VIP LOUNGE (1).jpeg",
   },
 ];
 
