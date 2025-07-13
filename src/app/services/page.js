@@ -18,7 +18,7 @@ const services = [
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 3500 BDT",
-    image: "/Oil-massage-1.jpg",
+    image: "/Oil-massage-2.jpeg",
   },
   {
     title: "Aroma Therapy Massage",
@@ -34,7 +34,7 @@ const services = [
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 6000 BDT",
-    image: "/Sensual-massage-1.jpg",
+    image: "/Sensual-massage-2.jpeg",
   },
   {
     title: "Nuru Massage",
@@ -42,7 +42,7 @@ const services = [
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 8000 BDT",
-    image: "/Nuru-massage-1.jpg",
+    image: "/Nuru-massage-2.jpeg",
   },
   {
     title: "Body To Body Massage",
@@ -50,7 +50,7 @@ const services = [
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 9500 BDT",
-    image: "/Body-to-body-massage-1.jpg",
+    image: "/Body-to-body-massage-2.jpeg",
   },
   {
     title: "Four Hand Massage",
@@ -58,7 +58,7 @@ const services = [
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 16500 BDT",
-    image: "/Four-hand-massage-1.jpg",
+    image: "/Four-hand-massage-2.jpeg",
   },
   {
     title: "Six Hand Massage",
@@ -77,15 +77,15 @@ const services = [
     image: "/Haircut-Start.jpg",
   },
   {
-    title: "SHAVE",
+    title: "Shave",
     slug: "SHAVE",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
-    price: "Price: 9900 BDT",
+    price: "Price: 590 BDT",
     image: "/SHAVE-START-1.jpg",
   },
   {
-    title: "MANICURE",
+    title: "Deluxe Manicure",
     slug: "MANICURE",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
@@ -93,20 +93,12 @@ const services = [
     image: "/MANICURE-only.jpg",
   },
   {
-    title: "PEDICURE",
+    title: "Deluxe Pedicure",
     slug: "PEDICURE",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
     price: "Price: 1200 BDT",
     image: "/PEDICURE-MANICURE-1.jpg",
-  },
-  {
-    title: "VIP LOUNGE",
-    slug: "VIPLOUNGE",
-    description:
-      "Essential oils and scents to calm the senses and rejuvenate your spirit.",
-    price: "Price: **** BDT",
-    image: "/VIP LOUNGE (1).jpeg",
   },
 ];
 

@@ -17,7 +17,7 @@ const products = [
     title: "Oil Massage",
     slug: "hoodie",
     price: "3500 BDT",
-    image: "/Oil-massage-1.jpg",
+    image: "/Oil-massage-2.jpeg",
   },
   {
     title: "Aroma Therapy Massage",
@@ -29,25 +29,25 @@ const products = [
     title: "Sensual Massage",
     slug: "Sensual",
     price: "6000 BDT",
-    image: "/Sensual-massage-1.jpg",
+    image: "/Sensual-massage-2.jpeg",
   },
   {
     title: "Nuru Massage",
     slug: "Nuru",
     price: "8000 BDT",
-    image: "/Nuru-massage-1.jpg",
+    image: "/Nuru-massage-2.jpeg",
   },
   {
     title: "Body To Body Massage",
     slug: "BodyToBody",
     price: "9500 BDT",
-    image: "/Body-to-body-massage-1.jpg",
+    image: "/Body-to-body-massage-2.jpeg",
   },
   {
     title: "Four Hand Massage",
     slug: "FourHand",
     price: "16500 BDT",
-    image: "/Four-hand-massage-1.jpg",
+    image: "/Four-hand-massage-2.jpeg",
   },
   {
     title: "Six Hand Massage",
@@ -62,28 +62,22 @@ const products = [
     image: "/Haircut-Start.jpg",
   },
   {
-    title: "SHAVE",
+    title: "Shave",
     slug: "SHAVE",
-    price: "9900 BDT",
+    price: "590 BDT",
     image: "/SHAVE-START-1.jpg",
   },
   {
-    title: "MANICURE",
+    title: "Deluxe Manicure",
     slug: "MANICURE",
     price: "1200 BDT",
     image: "/MANICURE-only.jpg",
   },
   {
-    title: "PEDICURE",
+    title: "Deluxe Pedicure",
     slug: "PEDICURE",
     price: "1200 BDT",
     image: "/PEDICURE-MANICURE-1.jpg",
-  },
-  {
-    title: "VIP LOUNGE",
-    slug: "VIPLOUNGE",
-    price: "**** BDT",
-    image: "/VIP LOUNGE (1).jpeg",
   },
 ];
 

@@ -21,12 +21,12 @@ export default function AboutPage() {
           </p>
 
           <div className="mt-6">
-            <a
+            <Link
               href="/services"
               className="inline-block bg-emerald-600 text-white px-6 py-3 rounded-md hover:bg-emerald-700 transition"
             >
               Explore Our Services
-            </a>
+            </Link>
           </div>
         </div>
 

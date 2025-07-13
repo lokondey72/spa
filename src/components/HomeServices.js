@@ -17,7 +17,7 @@ const services = [
   {
     title: "Oil massage",
     description: "Warm stones to ease muscle tension and boost circulation.",
-    image: "/Oil-massage-1.jpg",
+    image: "/Oil-massage-2.jpeg",
   },
   {
     title: "Aromatherapy",
