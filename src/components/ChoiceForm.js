@@ -70,13 +70,13 @@ const products = [
   {
     title: "Deluxe Manicure",
     slug: "MANICURE",
-    price: "1200 BDT",
+    price: "2150 BDT",
     image: "/MANICURE-only.jpg",
   },
   {
     title: "Deluxe Pedicure",
     slug: "PEDICURE",
-    price: "1200 BDT",
+    price: "2150 BDT",
     image: "/PEDICURE-MANICURE-1.jpg",
   },
 ];

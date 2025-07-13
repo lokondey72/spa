@@ -89,7 +89,7 @@ const services = [
     slug: "MANICURE",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
-    price: "Price: 1200 BDT",
+    price: "Price: 2150 BDT",
     image: "/MANICURE-only.jpg",
   },
   {
@@ -97,7 +97,7 @@ const services = [
     slug: "PEDICURE",
     description:
       "Essential oils and scents to calm the senses and rejuvenate your spirit.",
-    price: "Price: 1200 BDT",
+    price: "Price: 2150 BDT",
     image: "/PEDICURE-MANICURE-1.jpg",
   },
 ];
