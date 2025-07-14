@@ -13,8 +13,9 @@ const products = [
   { id: 7, name: "Four Hand Massage", price: "16500 BDT" },
   { id: 8, name: "Six Hand Massage", price: "26000 BDT" },
   { id: 9, name: "Haircut", price: "990 BDT" },
-  { id: 10, name: "SHAVE", price: "9900 BDT" },
-  { id: 11, name: "PEDICURE MANICURE", price: "5000 BDT" },
+  { id: 10, name: "Shave", price: "590 BDT" },
+  { id: 11, name: "Deluxe Manicure", price: "2150 BDT" },
+  { id: 12, name: "Deluxe Pedicure", price: "2150 BDT" },
 ];
 
 export default function ProductSlider() {
