@@ -17,8 +17,9 @@ export default function MapWithMarker() {
   return (
     <div className="mt-10 rounded-xl overflow-hidden shadow-md">
       <div className="w-full h-[350px]">
+        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6606.009857667805!2d90.4155186!3d23.7835557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c133458d5c2f%3A0xd55e5a0e760dad46!2sEuropean%20Spa!5e1!3m2!1sen!2sbd!4v1754847454749!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.7732484892067!2d90.4120816!3d23.7905525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c711998d5a03%3A0xde4579cce3557ace!2sEuRose%20Spa!5e1!3m2!1sen!2sbd!4v1752347389991!5m2!1sen!2sbd"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6606.009857667805!2d90.4155186!3d23.7835557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c133458d5c2f%3A0xd55e5a0e760dad46!2sEuropean%20Spa!5e1!3m2!1sen!2sbd!4v1754847454749!5m2!1sen!2sbd"
           className="w-full h-full border-0"
           allowFullScreen=""
           loading="lazy"
